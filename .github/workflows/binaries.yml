@@ -428,12 +428,12 @@ jobs:
           show-progress: 'false'
       - name: Install GitVersion
         id: pre-gitversion
-        uses: gittools/actions/gitversion/setup@v3.2.1
+        uses: gittools/actions/gitversion/setup@v4.7.0
         with:
           versionSpec: "5.x"
       - name: Run GitVersion
         id: gitversion
-        uses: gittools/actions/gitversion/execute@v3.2.1
+        uses: gittools/actions/gitversion/execute@v4.7.0
       - name: Normalize branch name
         id: normalize
         shell: bash
